@@ -1,4 +1,3 @@
-
 #include "main.h"
 /**
  * main - prints putchar
@@ -6,12 +5,15 @@
  * Return: 0
  */
 
-main()
+int main(void)
 {
 	char putchar = "_putchar";
-
-	printf("%c\n", putchar);
-
+	while (putchar)
+	{
+		_putchar(putchar);
+		putchar++;
+	}
+	_putchar('\n');
 	return (0);
 
 }
