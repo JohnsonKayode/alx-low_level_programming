@@ -25,7 +25,7 @@ void jack_bauer(void)
 			Hrs_max = '4';
 		}
 		Hrs_ones = '0';
-		while (mins_tens < '6')
+		while (Hrs_ones < Hrs_max)
 		{
 			mins_ones = '0';
 			while (mins_tens < '6')
@@ -40,7 +40,7 @@ void jack_bauer(void)
 					_putchar(mins_ones);
 					_putchar('\n');
 				}
-				min_ones = '0';
+				mins_ones = '0';
 				mins_tens++;
 			}
 			mins_tens = '0';
