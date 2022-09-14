@@ -39,6 +39,7 @@ void jack_bauer(void)
 					_putchar(mins_tens);
 					_putchar(mins_ones);
 					_putchar('\n');
+					mins_ones++;
 				}
 				mins_ones = '0';
 				mins_tens++;
