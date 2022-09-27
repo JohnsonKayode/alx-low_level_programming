@@ -1,6 +1,6 @@
 #include "main.h"
 
-/**
+/*
  * jack_bauer - prints every minute of the day
  *
  * Description: A function that prints every minue of the day
@@ -50,4 +50,4 @@ void jack_bauer(void)
 		Hrs_ones = '0';
 		Hrs_tens++;
 	}
-}
+}i

@@ -1,1 +1,1 @@
-Starting the low level preogramming with C
+Another set of pointers arrays and strings
