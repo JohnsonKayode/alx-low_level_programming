@@ -10,6 +10,10 @@
 
 int main(int argc, char *argv[])
 {
+	int = i;
+
+	i = i + 1;
+
 	printf("%s/n", argc[0]);
 
 	return (0);
