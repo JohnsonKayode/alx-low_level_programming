@@ -1,20 +1,19 @@
 #include <stdio.h>
 
+
 /**
- * main - prints the name followed by new line
- * @argc: arcuement counter
- * @argv: arguement container
+ * main - entry point
+ * @argc: number of arguements
+ * @argv: pointer of array
  *
- * Return: String i array
+ * Return: 0 success;
  */
 
 int main(int argc, char *argv[])
 {
-	int = i;
+	int i = argc;
 
-	i = i + 1;
-
-	printf("%s/n", argc[0]);
-
+	i += 1;
+	printf("%s\n", argv[0]);
 	return (0);
 }
