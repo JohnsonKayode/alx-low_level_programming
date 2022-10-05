@@ -2,29 +2,31 @@
 #include <stdlib.h>
 
 /**
- * main - entry point
- * @argc: number of arguements
- * @argv: pointer of arrays
- * Description: adds positive arguements to main
- *
- * Return: 0 success:
+ * main - prints its name, followed by new line
+ * @argc: arguement counter
+ * @argv: arguement vector
+ * Return: zero
  */
 
 int main(int argc, char *argv[])
 {
-	int add = 0, x = 0;
+	int i, j, sum = 0;
 
-	for (x = 0; x < argc; x++)
+	if (argc == 1)
 	{
-		if (atoi(argv[x]) != 0 && argv[x] != 0)
-		{
-			add += atoi(argv[x]);
-			continue;
-		}
+		printf("%d\n", argc - 1);
+		return (0);
 	}
-	if (argc < 2)
-		printf("0\n");
-	else
-		printf("%d\n", add);
+	for (i = 1; i < argc; i++)
+	{
+		for (j = 0; argv[i][j] != '\0'; j++)
+			if (!((argv[i][j] >= '0' && argv[i][j] <= '9') || argv[i][j] == '-'))
+			{
+				printf("Error\n");
+				return (1);
+			}
+		sum += atoi(argv[i]);
+	}
+	printf("%d\n", sum);
 	return (0);
 }
